@@ -1,0 +1,41 @@
+/* *{
+    margin:0;
+    padding: 0;
+} */
+button{
+    width:50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: lightslategray;
+    font-weight: 80px;
+}
+.display{
+    margin: 5px;
+    width: 230px;
+    font-size: 20px;
+    padding: 5px;
+    color:lightslategray;
+    margin-left: 8px;
+}
+.big{
+    width: 258px;
+    transform: translate(100px,100px);
+}
+@keyframes color{
+    0%{
+        background-color: rgb(88, 88, 184);
+    }
+    50%{
+        background-color: rgb(182, 182, 107);
+    }
+    100%{
+        background-color: rgb(99, 158, 99);
+    }
+}
+ body{
+    animation: color 15s   10 ;
+} 
+#btneq,#btnB,#btnAC{
+    background-color:maroon;
+}

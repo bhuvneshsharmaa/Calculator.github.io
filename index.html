@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body >
+    <div class="big">
+        <form name="form">
+            <input class="display" name="display">
+        </form>
+        <table>
+            <tr>
+                    <td><button onclick="clean()" id="btnAC">
+                            AC
+                        </button></td>
+                <td><button onclick="insert(value)" id="btn*" value="*">
+                    *
+                </button></td>
+                <td><button onclick="insert(value)" id="btn/" value="/">
+                    /
+                </button></td>
+                <td ><button onclick="back()" id="btnB" >
+                    <
+                </button></td>
+            </tr>
+            <tr >
+                <td>
+                    <button  id="btn7" value="7" onclick="insert(value)">
+                        7
+                    </button>
+                </td>
+                <td><button onclick="insert(value)" id="btn8" value="8">
+                    8
+                </button></td>
+                <td><button onclick="insert(value)" id="btn9" value="9">
+                    9
+                </button></td>
+                <td><button onclick="insert(value)" id="btn+" value="+">
+                    +
+                </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(value)" id="btn4" value="4">
+                    4
+                </button></td>
+                <td><button onclick="insert(value)" id="btn5" value="5">
+                    5
+                </button></td>
+                <td><button onclick="insert(value)" id="btn6" value="6">
+                    6
+                </button></td>
+                <td><button onclick="insert(value)" id="btn-" value="-">
+                    -
+                </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="insert(value)" id="btn1" value="1">
+                    1
+                </button></td>
+                <td><button onclick="insert(value)" id="btn2" value="2">
+                    2
+                </button></td>
+                <td><button onclick="insert(value)" id="btn3" value="3">
+                    3
+                </button></td>
+                <td><button onclick="insert(value)" id="btn%" value="3.1415">
+                    PI
+                </button></td>  
+            </tr>
+            <tr>
+                <td><button onclick="insert(value)" id="btn0" value="0">
+                    0
+                </button></td>
+                <td><button onclick="insert(value)" id="btn." value=".">
+                    .
+                </button></td>
+                <td><button onclick="insert(value)" id="btnS" value="S">
+                    <i class='fas fa-square-root-alt' style='font-size:24px'></i>
+                    </button></td>
+                <td><button onclick="equal()" id="btneq" value="=">
+                    =
+                </button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
